@@ -1,0 +1,194 @@
+{
+    "count": 2,
+    "fields": [
+      {
+        "name": "_id",
+        "path": [
+          "_id"
+        ],
+        "count": 2,
+        "type": "ObjectId",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "ObjectId",
+            "path": [
+              "_id"
+            ],
+            "count": 2,
+            "probability": 1,
+            "unique": 2,
+            "hasDuplicates": false,
+            "values": [
+              "646f782e92af17866b52abd7",
+              "646f772292af17866b52abd5"
+            ],
+            "bsonType": "ObjectId"
+          }
+        ]
+      },
+      {
+        "name": "correo_electronico",
+        "path": [
+          "correo_electronico"
+        ],
+        "count": 2,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "correo_electronico"
+            ],
+            "count": 2,
+            "probability": 1,
+            "unique": 2,
+            "hasDuplicates": false,
+            "values": [
+              "laura.garcia@example.com",
+              "cliente1@example.com"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      },
+      {
+        "name": "direccion_postal",
+        "path": [
+          "direccion_postal"
+        ],
+        "count": 2,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "direccion_postal"
+            ],
+            "count": 2,
+            "probability": 1,
+            "unique": 2,
+            "hasDuplicates": false,
+            "values": [
+              "Calle Mayor 123",
+              "Dirección 1"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      },
+      {
+        "name": "fecha_registro",
+        "path": [
+          "fecha_registro"
+        ],
+        "count": 2,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "fecha_registro"
+            ],
+            "count": 2,
+            "probability": 1,
+            "unique": 2,
+            "hasDuplicates": false,
+            "values": [
+              "2023-05-24T10:30:00Z",
+              "2023-05-25T00:00:00Z"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      },
+      {
+        "name": "nombre",
+        "path": [
+          "nombre"
+        ],
+        "count": 2,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "nombre"
+            ],
+            "count": 2,
+            "probability": 1,
+            "unique": 2,
+            "hasDuplicates": false,
+            "values": [
+              "Laura García",
+              "Cliente 1"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      },
+      {
+        "name": "recomendado_por",
+        "path": [
+          "recomendado_por"
+        ],
+        "count": 2,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "recomendado_por"
+            ],
+            "count": 2,
+            "probability": 1,
+            "unique": 2,
+            "hasDuplicates": false,
+            "values": [
+              "Juan López",
+              "Cliente 2"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      },
+      {
+        "name": "telefono",
+        "path": [
+          "telefono"
+        ],
+        "count": 2,
+        "type": "String",
+        "probability": 1,
+        "hasDuplicates": false,
+        "types": [
+          {
+            "name": "String",
+            "path": [
+              "telefono"
+            ],
+            "count": 2,
+            "probability": 1,
+            "unique": 2,
+            "hasDuplicates": false,
+            "values": [
+              "987654321",
+              "123456789"
+            ],
+            "bsonType": "String"
+          }
+        ]
+      }
+    ]
+  }

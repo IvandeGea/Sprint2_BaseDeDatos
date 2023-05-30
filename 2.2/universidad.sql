@@ -158,8 +158,6 @@ SELECT DISTINCT grado.nombre, asignatura.nombre
 FROM universidad.asignatura
 RIGHT JOIN grado ON asignatura.id_grado = grado.id
 
-!!!! tengo los datos me falta ordenar por numero de asignaturas que tiene cada grado
-
 -- Retorna un llistat amb el nom de tots els graus existents en la base de dades i el nombre d'assignatures que té cadascun, dels graus que tinguin més de 40 assignatures associades.
 
 LEFT JOIN universidad.asignatura ON grado.id = asignatura.id_grado
