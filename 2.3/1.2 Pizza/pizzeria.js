@@ -4,15 +4,6 @@ const Schema = mongoose.Schema;
 const MONGO_URI =
     process.env.MONGODB_URI || "mongodb://localhost:27017/pizzeria";
 
-mongoose
-    .connect(MONGO_URI)
-    .then((x) => {
-        const databaseName = x.connections[0].name;
-        console.log(`Connected to Mongo! Database name: ${databaseName}`);
-    })
-    .catch((err) => {
-        console.error("Error connecting to mongo: ", err);
-    });
 
 const clienteSchema = new Schema({
     nom: { type: String, required: true },
@@ -63,13 +54,6 @@ const pedidoSchema = new Schema({
     repartidor: { type: Schema.Types.ObjectId, ref: 'Empleado' },
     fechaHoraEntrega: { type: Date },
 });
-
-const Cliente = mongoose.model('Cliente', clienteSchema);
-const Producto = mongoose.model('Producto', productoSchema);
-const Categoria = mongoose.model('Categoria', categoriaPizzaSchema);
-const Empleado = mongoose.model('Empleado', empleadoSchema);
-const Tienda = mongoose.model('Tienda', tiendaSchema);
-const Pedido = mongoose.model('Pedido', pedidoSchema);
 
 mongoose
     .connect(MONGO_URI)

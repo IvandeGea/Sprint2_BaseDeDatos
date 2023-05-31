@@ -69,7 +69,6 @@ const likeDislikeComentarioSchema = new Schema({
     fechaHora: { type: Date, required: true },
 });
 
-
 usuarioSchema.plugin(require('mongoose-autopopulate'));
 videoSchema.plugin(require('mongoose-autopopulate'));
 canalSchema.plugin(require('mongoose-autopopulate'));
@@ -78,26 +77,26 @@ playlistSchema.plugin(require('mongoose-autopopulate'));
 comentarioSchema.plugin(require('mongoose-autopopulate'));
 likeDislikeComentarioSchema.plugin(require('mongoose-autopopulate'))
 
-const Usuario = mongoose.model('Usuario', usuarioSchema);
-const Video = mongoose.model('Video', videoSchema);
-const Etiqueta = mongoose.model('Etiqueta', etiquetaSchema);
-const Canal = mongoose.model('Canal', canalSchema);
-const LikeDislikeVideo = mongoose.model('LikeDislikeVideo', likeDislikeVideoSchema);
-const Playlist = mongoose.model('Playlist', playlistSchema);
-const Comentario = mongoose.model('Comentario', comentarioSchema);
-const LikeDislikeComentario = mongoose.model('LikeDislikeComentario', likeDislikeComentarioSchema);
-
-
-
-
 const MONGO_URI =
     process.env.MONGODB_URI || "mongodb://localhost:27017/Youtube";
 
 mongoose
     .connect(MONGO_URI)
     .then((x) => {
+
         const databaseName = x.connections[0].name;
         console.log(`Connected to Mongo! Database name: ${databaseName}`);
+
+
+
+        const Usuario = mongoose.model('Usuario', usuarioSchema);
+        const Video = mongoose.model('Video', videoSchema);
+        const Etiqueta = mongoose.model('Etiqueta', etiquetaSchema);
+        const Canal = mongoose.model('Canal', canalSchema);
+        const LikeDislikeVideo = mongoose.model('LikeDislikeVideo', likeDislikeVideoSchema);
+        const Playlist = mongoose.model('Playlist', playlistSchema);
+        const Comentario = mongoose.model('Comentario', comentarioSchema);
+        const LikeDislikeComentario = mongoose.model('LikeDislikeComentario', likeDislikeComentarioSchema);
 
         const canal = new Canal({
             nombre: 'Mi Canal',
